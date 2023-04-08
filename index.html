@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Cep</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Consulta Cep</h1>
+        </header>
+        <div class="box-field-principal">
+            <div class="box_input">
+                <div class="box-input">
+                    <input type="text" name="cep" id="cep" placeholder="Digite o Cep">
+                </div> 
+                <div class="box-btn">
+                    <button class="btn btn-consultar" id="btncon">Consultar</button>
+                    <button class="btn btn-limpar" id="btnLim">Limpar</button>
+                </div>
+            </div>
+        </div>
+        <div class="box-fields" id="box-form">
+            <input type="hidden" name="codcep" id="codcep">
+            <div class="field">
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" style="width: 20em;" readonly>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" style="width: 20em;" readonly>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <label for="ciddade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" style="width: 20em;" readonly>
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" name="estado" id="estado" style="width: 5em;" readonly>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <label for="dd">DDD</label>
+                    <input type="text" name="dd" id="dd" style="width: 5em;" readonly>
+                </div>
+            </div>
+            <div class="field">
+                <div>
+                    <label for="ibge">IBGE</label>
+                    <input type="text" name="ibge" id="ibge" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
